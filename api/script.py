@@ -11,11 +11,7 @@ imagenes = []
 for file in files_usac:
     pixeles = []
     image = Image.open('./imagenes/USAC/' + file)
-    data = asarray(image)
-    for filas in data:
-        for pixel in filas:
-            pixeles.append(pixel)
-    imagenes.append(pixeles)
+    imagenes.append(asarray(image).reshape(-1))
 
 print(len(imagenes))
 print(len(imagenes[0]))
