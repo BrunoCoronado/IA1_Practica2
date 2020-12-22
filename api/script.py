@@ -51,11 +51,20 @@ train_set = Data(train_set_x, train_set_y, 255)
 test_set = Data(test_set_x, test_set_y, 255)
 
 # Se entrenan los modelos
-model1 = Model(train_set, test_set, reg=False, alpha=0.001, lam=150)
-model1.training(print_training=True)
+model1 = Model(train_set, test_set, reg=False, alpha=0.001, lam=150, it=400)
+model1.training()
 
-model2 = Model(train_set, test_set, reg=False, alpha=0.002, lam=200)
-model2.training(print_training=True)
+model2 = Model(train_set, test_set, reg=False, alpha=0.002, lam=200, it=475)
+model2.training()
+
+model3 = Model(train_set, test_set, reg=False, alpha=0.0015, lam=200, it=525)
+model3.training()
+
+model4 = Model(train_set, test_set, reg=False, alpha=0.0025, lam=175, it=490)
+model4.training()
+
+model5 = Model(train_set, test_set, reg=False, alpha=0.003, lam=210, it=500)
+model5.training()
 
 # Se grafican los entrenamientos
-Plotter.show_Model([model1, model2])
+Plotter.show_Model([model1, model2, model3, model4, model5])
