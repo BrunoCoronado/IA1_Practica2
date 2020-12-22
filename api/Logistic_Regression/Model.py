@@ -10,7 +10,8 @@ from Logistic_Regression.Data import Data
 #MIN_VALUE = 0.1
 #STEP = 100
 
-MAX_ITERATIONS = 10000
+# MAX_ITERATIONS = 10000
+MAX_ITERATIONS = 500
 MIN_VALUE = 0.0
 STEP = 10 #Cada cuánto va a agregar a la bitácora el costo. Lo hace cuando es múltiplo del valor que se le da
 
@@ -65,7 +66,11 @@ class Model:
 
     def cost_function(self, data_set):
         y_hat = self.sigmoide(np.dot(self.betas.T, data_set.x))
+        # print(data_set.y)
         cost = -1 / data_set.m * np.sum(data_set.y * np.log(y_hat) + (1 - data_set.y) * np.log(1 - y_hat))
+        # print('costo:' + str(cost))
+        # print('np.sum: ' + str(np.sum(data_set.y * np.log(y_hat) + (1 - data_set.y) * np.log(1 - y_hat))))
+        # print("-1 / " + str(data_set.m) + " * np.sum(data_set.y * np.log(y_hat) + (1 - data_set.y) * np.log(1 - y_hat))")
         dB = 1/ data_set.m * np.sum(np.dot(y_hat - data_set.y, data_set.x.T), axis=0)
         dB = dB.reshape((len(dB), 1))
         

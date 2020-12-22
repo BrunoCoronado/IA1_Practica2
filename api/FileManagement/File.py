@@ -3,12 +3,22 @@ from PIL import Image
 import numpy as np
 
 def obtenerImagenes(universidad):
-    files = os.listdir('./imagenes/' + universidad)
+    universidades = ['Landivar', 'Mariano', 'Marroquin', 'USAC']
     imagenes = []
-    for file in files:
-        pixeles = []
-        image = Image.open('./imagenes/' + universidad + '/' + file)
-        imagenes.append(np.append(np.asarray(image).reshape(-1), [1]))
+
+    for u in universidades:
+        files = os.listdir('./imagenes/' + u)
+        for file in files:
+            pixeles = []
+            image = Image.open('./imagenes/' + u + '/' + file)
+            if universidad == u:
+                imagenes.append(np.append(np.asarray(image).reshape(-1), [1]))
+                # imagenes.append(np.append(u, [1]))
+            else: 
+                imagenes.append(np.append(np.asarray(image).reshape(-1), [0]))
+                # imagenes.append(np.append(u, [0]))
+
+
     result = np.array(imagenes)
     np.random.shuffle(result)
     # return result.astype(float)
@@ -20,10 +30,13 @@ def obtenerImagenes(universidad):
     test_set = result[:, slice_point:]
 
     # Se separan las entradas de las salidas
-    train_set_x_orig = train_set[0: 3, :]
-    train_set_y_orig = np.array([train_set[3, :]])
+    train_set_x_orig = train_set[0: 49152, :]
+    train_set_y_orig = np.array([train_set[49152, :]])
 
-    test_set_x_orig = test_set[0: 3, :]
-    test_set_y_orig = np.array([test_set[3, :]])
+    test_set_x_orig = test_set[0: 49152, :]
+    test_set_y_orig = np.array([test_set[49152, :]])
 
-    return train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig, ['Perdera', 'Ganara']
+    return train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig, ['Es ' + universidad, 'No es' + universidad]
+    # result = np.array(imagenes)
+    # print(result.astype(str))
+    # return [], [], [], [], ['Es ' + universidad, 'No es' + universidad]

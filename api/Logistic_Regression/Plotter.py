@@ -9,6 +9,7 @@ def show_picture(pixels):
 
 def show_Model(models):
     for model in models:
+        # print(model.bitacora)
         chart.plot(model.bitacora, label=str(model.alpha))
     chart.ylabel('Costo')
     chart.xlabel('Iteraciones')

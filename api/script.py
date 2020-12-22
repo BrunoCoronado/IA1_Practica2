@@ -47,15 +47,15 @@ train_set_x, train_set_y, test_set_x, test_set_y, classes = File.obtenerImagenes
 
 
 # Definir los conjuntos de datos
-train_set = Data(train_set_x, train_set_y, 100)
-test_set = Data(test_set_x, test_set_y, 100)
+train_set = Data(train_set_x, train_set_y, 255)
+test_set = Data(test_set_x, test_set_y, 255)
 
 # Se entrenan los modelos
-model1 = Model(train_set, test_set, reg=False, alpha=0.5, lam=0.5)
-model1.training()
+model1 = Model(train_set, test_set, reg=False, alpha=0.001, lam=150)
+model1.training(print_training=True)
 
-model2 = Model(train_set, test_set, reg=False, alpha=0.05, lam=150)
-model2.training()
+model2 = Model(train_set, test_set, reg=False, alpha=0.002, lam=200)
+model2.training(print_training=True)
 
 # Se grafican los entrenamientos
 Plotter.show_Model([model1, model2])
