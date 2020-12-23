@@ -1,6 +1,7 @@
 import os
 from PIL import Image
 import numpy as np
+from Logistic_Regression.Data import Data
 
 def obtenerImagenes(universidad):
     universidades = ['Landivar', 'Mariano', 'Marroquin', 'USAC']
@@ -30,13 +31,19 @@ def obtenerImagenes(universidad):
     test_set = result[:, slice_point:]
 
     # Se separan las entradas de las salidas
-    train_set_x_orig = train_set[0: 49152, :]
-    train_set_y_orig = np.array([train_set[49152, :]])
+    # train_set_x_orig = train_set[0: 49152, :]
+    # train_set_y_orig = np.array([train_set[49152, :]])
 
-    test_set_x_orig = test_set[0: 49152, :]
-    test_set_y_orig = np.array([test_set[49152, :]])
+    # test_set_x_orig = test_set[0: 49152, :]
+    # test_set_y_orig = np.array([test_set[49152, :]])
 
-    return train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig, ['Es ' + universidad, 'No es' + universidad]
+    # train_set = Data(train_set[0: 49152, :], np.array([train_set[49152, :]]), 255)
+    # test_set = Data(test_set[0: 49152, :], np.array([test_set[49152, :]]), 255)
+
+    # return train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig
+
+    return Data(train_set[0: 49152, :], np.array([train_set[49152, :]]), 255), Data(test_set[0: 49152, :], np.array([test_set[49152, :]]), 255)
+
     # result = np.array(imagenes)
     # print(result.astype(str))
     # return [], [], [], [], ['Es ' + universidad, 'No es' + universidad]
