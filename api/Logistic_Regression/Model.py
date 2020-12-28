@@ -32,13 +32,13 @@ class Model:
         #print(self.betas)
         self.bitacora = []
 
-    def training(self, print_training=False, step=100):
+    def entrenar(self, print_training=False):
         iterations = 0
         cost, dB = self.cost_function(self.train_set)
         if print_training: print(iterations, cost, sep="---")
         end = self.finalization(cost, iterations)
         while not end:
-            self.update_coefficients(dB)
+            self.actualizarCoeficientes(dB)
             iterations += 1
             cost, dB = self.cost_function(self.train_set)
             if print_training: print(iterations, cost, sep="---")
@@ -49,10 +49,8 @@ class Model:
 
         self.train_accuracy = 100 - np.mean(np.abs(train_prediction - self.train_set.y)) * 100
         self.test_accuracy = 100 - np.mean(np.abs(test_prediction - self.test_set.y)) * 100
-        print('Eficacia en entrenamiento: ', self.train_accuracy)
-        print('Eficacia en prueba: ', self.test_accuracy, end='\r\n------------\r\n')
 
-    def update_coefficients(self, gradient):
+    def actualizarCoeficientes(self, gradient):
         self.betas -= self.alpha * gradient
 
     def finalization(self, cost, iterations):
@@ -75,10 +73,6 @@ class Model:
         if self.reg:
             cost += self.lam / (2 * data_set.m) * sum(self.betas ** 2)
             dB += (self.lam / data_set.m) * self.betas
-
-        #print('cost: ', cost)
-        #print('dB: ', dB)
-        
         return cost, dB
 
     def sigmoide(self, z):
