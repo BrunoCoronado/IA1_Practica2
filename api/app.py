@@ -43,21 +43,11 @@ def generar():
         status = 200
     )
 
-@app.route("/bitacora", methods=['GET'])
-@cross_origin()
-def bitacora():
-    """
-    Obtener la Bitacora
-    """
-    
-    f = open("bitacora.txt", "r")
-    bitacora = f.read()
-
-    return jsonify(
-        bitacora = bitacora,
-        mensaje = 'Bitácora Obtenida!',
-        status = 200
-    )
+def verModelos():
+    print('USAC -> Entrenamiento: ' +  '%.2f' % modelo_usac.train_accuracy + ' Validacion: ' + '%.2f' % modelo_usac.test_accuracy)
+    print('Landivar -> Entrenamiento: ' +  '%.2f' % modelo_landivar.train_accuracy + ' Validacion: ' + '%.2f' % modelo_landivar.test_accuracy)
+    print('Mariano -> Entrenamiento: ' +  '%.2f' % modelo_mariano.train_accuracy + ' Validacion: ' + '%.2f' % modelo_mariano.test_accuracy)
+    print('Marroquin -> Entrenamiento: ' +  '%.2f' % modelo_marroquin.train_accuracy + ' Validacion: ' + '%.2f' % modelo_marroquin.test_accuracy)
 
 def guardarBitacora(modelos, universidad):
     f = open("bitacora.txt", "a+")
@@ -74,7 +64,6 @@ def guardarBitacora(modelos, universidad):
     f.write('--------------------------------------\n')
     f.close()
     return
-
 
 def inicializarModelos():
     global modelo_usac
@@ -101,7 +90,7 @@ def inicializarModelos():
         m.entrenar()
     Plotter.guardarModelo(modelos_usac, 'USAC.png')
     guardarBitacora(modelos_usac, 'USAC')
-    modelo_usac = sorted(modelos_usac, key=lambda item: item.test_accuracy, reverse=False)[0]
+    modelo_usac = sorted(modelos_usac, key=lambda item: item.test_accuracy, reverse=True)[0]
 
     modelos_landivar.append(Model(train_set_landivar, test_set_landivar, reg=False, alpha=0.0014, lam=100, it=650))
     modelos_landivar.append(Model(train_set_landivar, test_set_landivar, reg=False, alpha=0.001444, lam=200, it=700))
@@ -112,7 +101,7 @@ def inicializarModelos():
         m.entrenar()
     Plotter.guardarModelo(modelos_landivar, 'Landivar.png')
     guardarBitacora(modelos_landivar, 'Landivar')
-    modelo_landivar = sorted(modelos_landivar, key=lambda item: item.test_accuracy, reverse=False)[0]
+    modelo_landivar = sorted(modelos_landivar, key=lambda item: item.test_accuracy, reverse=True)[0]
 
     modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.00001, lam=150, it=1200))
     modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.0025, lam=250, it=700))
@@ -123,7 +112,7 @@ def inicializarModelos():
         m.entrenar()
     Plotter.guardarModelo(modelos_mariano, 'Mariano.png')
     guardarBitacora(modelos_mariano, 'Mariano')
-    modelo_mariano = sorted(modelos_mariano, key=lambda item: item.test_accuracy, reverse=False)[0]
+    modelo_mariano = sorted(modelos_mariano, key=lambda item: item.test_accuracy, reverse=True)[0]
 
     modelos_marroquin.append(Model(train_set_marroquin, test_set_marroquin, reg=False, alpha=0.003, lam=150, it=650))
     modelos_marroquin.append(Model(train_set_marroquin, test_set_marroquin, reg=False, alpha=0.0001, lam=200, it=700))
@@ -134,7 +123,10 @@ def inicializarModelos():
         m.entrenar()
     Plotter.guardarModelo(modelos_marroquin, 'Marroquin.png')    
     guardarBitacora(modelos_marroquin, 'Marroquin')
-    modelo_marroquin = sorted(modelos_marroquin, key=lambda item: item.test_accuracy, reverse=False)[0]
+    modelo_marroquin = sorted(modelos_marroquin, key=lambda item: item.test_accuracy, reverse=True)[0]
+
+    verModelos()
+
 
 if __name__ == "__main__":
     inicializarModelos()

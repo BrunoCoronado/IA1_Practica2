@@ -11,11 +11,7 @@ export class WebService {
 
   constructor(private http: HttpClient) { }
 
-  async generarModelo(data){
-    return this.http.post(`${this.protocolo}${this.host}${this.path_raiz}/generar`, data).toPromise();
-  }
-
-  async obtenerBitacora(){
-    return this.http.get(`${this.protocolo}${this.host}${this.path_raiz}/bitacora`).toPromise();
+  async analizar(data){
+    return this.http.post(`${this.protocolo}${this.host}${this.path_raiz}/analizar`, data).toPromise();
   }
 }
