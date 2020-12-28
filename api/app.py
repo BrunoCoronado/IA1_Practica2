@@ -7,6 +7,8 @@ from Logistic_Regression.Model import Model
 from Logistic_Regression import Plotter
 import numpy as np
 from datetime import datetime
+import base64
+from PIL import Image
 
 app = FlaskAPI(__name__)
 cors = CORS(app)
@@ -25,20 +27,28 @@ def generar():
     Analizar imagen que viene en base64
     """
     
+    if modelo_usac == None:
+        inicializarModelos()
+
     # global criterio
     # global seleccion
     # global data
 
-    # criterio = request.json['criterio']
-    # seleccion = request.json['seleccion']
-    # data = request.json['data']
+    with open("./tmp.jpg", "wb") as fh:
+        fh.write(base64.b64decode(request.json['imagen']))
+        fh.close()
 
-    # solucion = ejecutar()
-    
-    # guardarBitacora(request.json['nombre'], solucion)
+    image = Image.open('./tmp.jpg')
+    data = np.append(np.asarray(image).reshape(-1), [1]) / 255
+    resultados = []
+    resultados.append(modelo_usac.predecir(data))
+    resultados.append(modelo_landivar.predecir(data))
+    resultados.append(modelo_mariano.predecir(data))
+    resultados.append(modelo_marroquin.predecir(data))
+    print(resultados)
 
     return jsonify(
-        # solucion = solucion.solucion,
+        resultados = resultados,
         mensaje = 'imagen Analizada!',
         status = 200
     )
@@ -105,9 +115,9 @@ def inicializarModelos():
 
     modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.00001, lam=150, it=1200))
     modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.0025, lam=250, it=700))
-    modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.0010, lam=350, it=600))
+    modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.0010, lam=350, it=900))
     modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.002555, lam=375, it=700))
-    modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.001, lam=400, it=600))
+    modelos_mariano.append(Model(train_set_mariano, test_set_mariano, reg=False, alpha=0.001, lam=100, it=600))
     for m in modelos_mariano:
         m.entrenar()
     Plotter.guardarModelo(modelos_mariano, 'Mariano.png')
@@ -129,5 +139,4 @@ def inicializarModelos():
 
 
 if __name__ == "__main__":
-    inicializarModelos()
     app.run(debug=True)

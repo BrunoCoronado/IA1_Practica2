@@ -1,180 +1,414 @@
 --------------------------------------
-27/12/2020 22:30:59
+28/12/2020 16:18:43
 USAC - MODELO 1
- Entrenamiento: 96.60%
- Validacion: 92.13%
-USAC - MODELO 2
- Entrenamiento: 97.73%
- Validacion: 91.01%
-USAC - MODELO 3
- Entrenamiento: 85.84%
- Validacion: 87.64%
-USAC - MODELO 4
- Entrenamiento: 97.73%
- Validacion: 92.13%
-USAC - MODELO 5
- Entrenamiento: 94.90%
- Validacion: 92.13%
---------------------------------------
---------------------------------------
-27/12/2020 22:31:49
-Landivar - MODELO 1
- Entrenamiento: 93.20%
- Validacion: 93.26%
-Landivar - MODELO 2
- Entrenamiento: 93.48%
- Validacion: 95.51%
-Landivar - MODELO 3
- Entrenamiento: 74.50%
- Validacion: 77.53%
-Landivar - MODELO 4
- Entrenamiento: 93.77%
- Validacion: 94.38%
-Landivar - MODELO 5
- Entrenamiento: 75.35%
- Validacion: 79.78%
---------------------------------------
---------------------------------------
-27/12/2020 22:32:43
-Mariano - MODELO 1
- Entrenamiento: 83.29%
- Validacion: 82.02%
-Mariano - MODELO 2
  Entrenamiento: 96.88%
- Validacion: 87.64%
-Mariano - MODELO 3
- Entrenamiento: 95.47%
+ Validacion: 86.52%
+USAC - MODELO 2
+ Entrenamiento: 96.88%
+ Validacion: 86.52%
+USAC - MODELO 3
+ Entrenamiento: 85.55%
+ Validacion: 83.15%
+USAC - MODELO 4
+ Entrenamiento: 96.88%
+ Validacion: 85.39%
+USAC - MODELO 5
+ Entrenamiento: 94.62%
  Validacion: 89.89%
-Mariano - MODELO 4
+--------------------------------------
+--------------------------------------
+28/12/2020 16:19:32
+Landivar - MODELO 1
  Entrenamiento: 94.05%
  Validacion: 91.01%
-Mariano - MODELO 5
- Entrenamiento: 95.47%
- Validacion: 89.89%
---------------------------------------
---------------------------------------
-27/12/2020 22:33:36
-Marroquin - MODELO 1
- Entrenamiento: 97.73%
- Validacion: 93.26%
-Marroquin - MODELO 2
- Entrenamiento: 94.90%
- Validacion: 93.26%
-Marroquin - MODELO 3
- Entrenamiento: 97.73%
- Validacion: 93.26%
-Marroquin - MODELO 4
- Entrenamiento: 97.73%
- Validacion: 93.26%
-Marroquin - MODELO 5
- Entrenamiento: 95.18%
- Validacion: 94.38%
---------------------------------------
---------------------------------------
-27/12/2020 22:34:23
-USAC - MODELO 1
- Entrenamiento: 95.47%
- Validacion: 87.64%
-USAC - MODELO 2
- Entrenamiento: 96.03%
- Validacion: 87.64%
-USAC - MODELO 3
- Entrenamiento: 86.97%
- Validacion: 82.02%
-USAC - MODELO 4
- Entrenamiento: 93.20%
- Validacion: 88.76%
-USAC - MODELO 5
- Entrenamiento: 80.17%
- Validacion: 79.78%
---------------------------------------
---------------------------------------
-27/12/2020 22:35:38
-USAC - MODELO 1
- Entrenamiento: 95.47%
- Validacion: 92.13%
-USAC - MODELO 2
- Entrenamiento: 96.88%
- Validacion: 91.01%
-USAC - MODELO 3
- Entrenamiento: 85.27%
- Validacion: 91.01%
-USAC - MODELO 4
- Entrenamiento: 90.08%
- Validacion: 93.26%
-USAC - MODELO 5
- Entrenamiento: 85.84%
- Validacion: 82.02%
---------------------------------------
---------------------------------------
-27/12/2020 22:36:31
-Landivar - MODELO 1
- Entrenamiento: 94.33%
- Validacion: 89.89%
 Landivar - MODELO 2
- Entrenamiento: 94.62%
- Validacion: 89.89%
+ Entrenamiento: 94.05%
+ Validacion: 91.01%
 Landivar - MODELO 3
- Entrenamiento: 75.64%
+ Entrenamiento: 75.07%
  Validacion: 75.28%
 Landivar - MODELO 4
+ Entrenamiento: 94.33%
+ Validacion: 91.01%
+Landivar - MODELO 5
+ Entrenamiento: 76.20%
+ Validacion: 76.40%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:20:27
+Mariano - MODELO 1
+ Entrenamiento: 83.85%
+ Validacion: 80.90%
+Mariano - MODELO 2
+ Entrenamiento: 96.03%
+ Validacion: 89.89%
+Mariano - MODELO 3
+ Entrenamiento: 96.03%
+ Validacion: 89.89%
+Mariano - MODELO 4
+ Entrenamiento: 95.75%
+ Validacion: 89.89%
+Mariano - MODELO 5
  Entrenamiento: 94.62%
+ Validacion: 89.89%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:23:21
+USAC - MODELO 1
+ Entrenamiento: 94.62%
+ Validacion: 87.64%
+USAC - MODELO 2
+ Entrenamiento: 92.92%
+ Validacion: 83.15%
+USAC - MODELO 3
+ Entrenamiento: 85.84%
+ Validacion: 78.65%
+USAC - MODELO 4
+ Entrenamiento: 92.92%
+ Validacion: 85.39%
+USAC - MODELO 5
+ Entrenamiento: 92.63%
+ Validacion: 87.64%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:24:06
+Landivar - MODELO 1
+ Entrenamiento: 94.05%
+ Validacion: 89.89%
+Landivar - MODELO 2
+ Entrenamiento: 94.33%
+ Validacion: 89.89%
+Landivar - MODELO 3
+ Entrenamiento: 75.07%
+ Validacion: 75.28%
+Landivar - MODELO 4
+ Entrenamiento: 95.18%
  Validacion: 89.89%
 Landivar - MODELO 5
  Entrenamiento: 75.64%
  Validacion: 78.65%
 --------------------------------------
 --------------------------------------
-27/12/2020 22:37:24
+28/12/2020 16:24:52
 Mariano - MODELO 1
- Entrenamiento: 83.29%
- Validacion: 80.90%
+ Entrenamiento: 81.30%
+ Validacion: 85.39%
 Mariano - MODELO 2
- Entrenamiento: 94.05%
- Validacion: 88.76%
+ Entrenamiento: 93.20%
+ Validacion: 92.13%
 Mariano - MODELO 3
- Entrenamiento: 94.90%
- Validacion: 88.76%
+ Entrenamiento: 95.75%
+ Validacion: 93.26%
 Mariano - MODELO 4
- Entrenamiento: 94.05%
- Validacion: 88.76%
+ Entrenamiento: 94.33%
+ Validacion: 94.38%
 Mariano - MODELO 5
- Entrenamiento: 94.90%
- Validacion: 88.76%
+ Entrenamiento: 94.62%
+ Validacion: 93.26%
 --------------------------------------
 --------------------------------------
-27/12/2020 22:38:16
+28/12/2020 16:25:33
 Marroquin - MODELO 1
  Entrenamiento: 98.02%
- Validacion: 93.26%
+ Validacion: 95.51%
 Marroquin - MODELO 2
+ Entrenamiento: 94.33%
+ Validacion: 97.75%
+Marroquin - MODELO 3
+ Entrenamiento: 97.73%
+ Validacion: 95.51%
+Marroquin - MODELO 4
+ Entrenamiento: 97.45%
+ Validacion: 95.51%
+Marroquin - MODELO 5
+ Entrenamiento: 94.62%
+ Validacion: 97.75%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:26:16
+USAC - MODELO 1
+ Entrenamiento: 96.32%
+ Validacion: 91.01%
+USAC - MODELO 2
+ Entrenamiento: 98.02%
+ Validacion: 89.89%
+USAC - MODELO 3
+ Entrenamiento: 85.55%
+ Validacion: 87.64%
+USAC - MODELO 4
+ Entrenamiento: 97.45%
+ Validacion: 89.89%
+USAC - MODELO 5
+ Entrenamiento: 94.05%
+ Validacion: 92.13%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:27:05
+Landivar - MODELO 1
+ Entrenamiento: 93.77%
+ Validacion: 94.38%
+Landivar - MODELO 2
+ Entrenamiento: 94.62%
+ Validacion: 94.38%
+Landivar - MODELO 3
+ Entrenamiento: 73.94%
+ Validacion: 78.65%
+Landivar - MODELO 4
+ Entrenamiento: 94.90%
+ Validacion: 94.38%
+Landivar - MODELO 5
+ Entrenamiento: 75.64%
+ Validacion: 78.65%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:28:06
+USAC - MODELO 1
+ Entrenamiento: 96.03%
+ Validacion: 89.89%
+USAC - MODELO 2
+ Entrenamiento: 96.60%
+ Validacion: 88.76%
+USAC - MODELO 3
+ Entrenamiento: 87.25%
+ Validacion: 77.53%
+USAC - MODELO 4
+ Entrenamiento: 96.03%
+ Validacion: 89.89%
+USAC - MODELO 5
+ Entrenamiento: 95.18%
+ Validacion: 87.64%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:28:49
+Landivar - MODELO 1
+ Entrenamiento: 93.77%
+ Validacion: 89.89%
+Landivar - MODELO 2
+ Entrenamiento: 94.33%
+ Validacion: 89.89%
+Landivar - MODELO 3
+ Entrenamiento: 76.49%
+ Validacion: 71.91%
+Landivar - MODELO 4
+ Entrenamiento: 95.47%
+ Validacion: 89.89%
+Landivar - MODELO 5
+ Entrenamiento: 77.05%
+ Validacion: 73.03%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:29:36
+Mariano - MODELO 1
+ Entrenamiento: 82.15%
+ Validacion: 87.64%
+Mariano - MODELO 2
+ Entrenamiento: 92.35%
+ Validacion: 93.26%
+Mariano - MODELO 3
+ Entrenamiento: 95.47%
+ Validacion: 96.63%
+Mariano - MODELO 4
+ Entrenamiento: 94.05%
+ Validacion: 94.38%
+Mariano - MODELO 5
+ Entrenamiento: 93.20%
+ Validacion: 93.26%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:30:18
+Marroquin - MODELO 1
+ Entrenamiento: 97.73%
+ Validacion: 95.51%
+Marroquin - MODELO 2
+ Entrenamiento: 94.33%
+ Validacion: 98.88%
+Marroquin - MODELO 3
+ Entrenamiento: 97.73%
+ Validacion: 95.51%
+Marroquin - MODELO 4
+ Entrenamiento: 97.73%
+ Validacion: 97.75%
+Marroquin - MODELO 5
+ Entrenamiento: 94.90%
+ Validacion: 98.88%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:33:13
+USAC - MODELO 1
+ Entrenamiento: 95.75%
+ Validacion: 92.13%
+USAC - MODELO 2
+ Entrenamiento: 96.60%
+ Validacion: 92.13%
+USAC - MODELO 3
+ Entrenamiento: 85.55%
+ Validacion: 85.39%
+USAC - MODELO 4
+ Entrenamiento: 93.48%
+ Validacion: 88.76%
+USAC - MODELO 5
+ Entrenamiento: 89.80%
+ Validacion: 87.64%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:34:42
+USAC - MODELO 1
+ Entrenamiento: 95.47%
+ Validacion: 86.52%
+USAC - MODELO 2
+ Entrenamiento: 96.60%
+ Validacion: 86.52%
+USAC - MODELO 3
+ Entrenamiento: 86.97%
+ Validacion: 74.16%
+USAC - MODELO 4
+ Entrenamiento: 96.88%
+ Validacion: 86.52%
+USAC - MODELO 5
+ Entrenamiento: 90.93%
+ Validacion: 89.89%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:38:23
+USAC - MODELO 1
+ Entrenamiento: 96.60%
+ Validacion: 87.64%
+USAC - MODELO 2
+ Entrenamiento: 98.02%
+ Validacion: 87.64%
+USAC - MODELO 3
+ Entrenamiento: 87.54%
+ Validacion: 82.02%
+USAC - MODELO 4
+ Entrenamiento: 98.02%
+ Validacion: 87.64%
+USAC - MODELO 5
+ Entrenamiento: 89.52%
+ Validacion: 82.02%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:39:11
+Landivar - MODELO 1
+ Entrenamiento: 94.05%
+ Validacion: 86.52%
+Landivar - MODELO 2
+ Entrenamiento: 94.33%
+ Validacion: 85.39%
+Landivar - MODELO 3
+ Entrenamiento: 75.35%
+ Validacion: 76.40%
+Landivar - MODELO 4
+ Entrenamiento: 94.90%
+ Validacion: 85.39%
+Landivar - MODELO 5
+ Entrenamiento: 75.92%
+ Validacion: 77.53%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:40:06
+Mariano - MODELO 1
+ Entrenamiento: 82.15%
+ Validacion: 83.15%
+Mariano - MODELO 2
+ Entrenamiento: 96.03%
+ Validacion: 93.26%
+Mariano - MODELO 3
  Entrenamiento: 95.47%
  Validacion: 93.26%
+Mariano - MODELO 4
+ Entrenamiento: 96.03%
+ Validacion: 93.26%
+Mariano - MODELO 5
+ Entrenamiento: 93.20%
+ Validacion: 93.26%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:40:51
+Marroquin - MODELO 1
+ Entrenamiento: 98.30%
+ Validacion: 94.38%
+Marroquin - MODELO 2
+ Entrenamiento: 93.77%
+ Validacion: 91.01%
 Marroquin - MODELO 3
  Entrenamiento: 98.02%
- Validacion: 92.13%
+ Validacion: 94.38%
 Marroquin - MODELO 4
- Entrenamiento: 98.30%
- Validacion: 92.13%
+ Entrenamiento: 98.58%
+ Validacion: 95.51%
 Marroquin - MODELO 5
- Entrenamiento: 96.03%
+ Entrenamiento: 95.47%
  Validacion: 94.38%
 --------------------------------------
 --------------------------------------
-27/12/2020 22:39:01
+28/12/2020 16:44:24
 USAC - MODELO 1
- Entrenamiento: 95.47%
- Validacion: 91.01%
+ Entrenamiento: 96.32%
+ Validacion: 92.13%
 USAC - MODELO 2
- Entrenamiento: 95.18%
+ Entrenamiento: 97.45%
  Validacion: 91.01%
 USAC - MODELO 3
- Entrenamiento: 83.00%
- Validacion: 87.64%
+ Entrenamiento: 86.12%
+ Validacion: 83.15%
 USAC - MODELO 4
- Entrenamiento: 93.77%
- Validacion: 88.76%
-USAC - MODELO 5
- Entrenamiento: 90.37%
+ Entrenamiento: 97.45%
  Validacion: 91.01%
+USAC - MODELO 5
+ Entrenamiento: 91.22%
+ Validacion: 91.01%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:45:10
+Landivar - MODELO 1
+ Entrenamiento: 94.05%
+ Validacion: 88.76%
+Landivar - MODELO 2
+ Entrenamiento: 94.62%
+ Validacion: 88.76%
+Landivar - MODELO 3
+ Entrenamiento: 74.50%
+ Validacion: 78.65%
+Landivar - MODELO 4
+ Entrenamiento: 94.62%
+ Validacion: 87.64%
+Landivar - MODELO 5
+ Entrenamiento: 75.35%
+ Validacion: 79.78%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:46:01
+Mariano - MODELO 1
+ Entrenamiento: 83.00%
+ Validacion: 84.27%
+Mariano - MODELO 2
+ Entrenamiento: 97.45%
+ Validacion: 88.76%
+Mariano - MODELO 3
+ Entrenamiento: 96.32%
+ Validacion: 88.76%
+Mariano - MODELO 4
+ Entrenamiento: 97.45%
+ Validacion: 88.76%
+Mariano - MODELO 5
+ Entrenamiento: 94.62%
+ Validacion: 88.76%
+--------------------------------------
+--------------------------------------
+28/12/2020 16:46:46
+Marroquin - MODELO 1
+ Entrenamiento: 98.58%
+ Validacion: 92.13%
+Marroquin - MODELO 2
+ Entrenamiento: 95.18%
+ Validacion: 93.26%
+Marroquin - MODELO 3
+ Entrenamiento: 98.30%
+ Validacion: 92.13%
+Marroquin - MODELO 4
+ Entrenamiento: 98.30%
+ Validacion: 93.26%
+Marroquin - MODELO 5
+ Entrenamiento: 95.75%
+ Validacion: 92.13%
 --------------------------------------

@@ -91,3 +91,6 @@ class Model:
         result = y_hat >= 0.5
         return result.astype(int)
 
+    def predecir(self, x):
+        y_hat = self.sigmoide(np.dot(self.betas.T, x))
+        return float(y_hat)
